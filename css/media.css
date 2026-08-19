@@ -1,0 +1,624 @@
+@media (width < 64rem) {
+
+    .dashboard .container .sidebar {
+        width: fit-content;
+        padding: 10px;
+    }
+
+    .dashboard .container .sidebar .brand-sidebar .logo-sidebar {
+        border-radius: var(--md-font);
+        display: block;
+        border-radius: 1.25rem;
+    }
+
+    .dashboard .container .sidebar .brand-sidebar .logo-sidebar i {
+        font-size: 1rem;
+    }
+
+    .dashboard .container .sidebar .brand-sidebar .title-sidebar {
+        display: none;
+    }
+
+    .dashboard .container .sidebar .lists-sidebar .home {
+        width: fit-content;
+    }
+
+    .dashboard .container .sidebar .lists-sidebar .list span {
+        display: none;
+    }
+
+    .dashboard .container .sidebar .quick-actions span {
+        display: none;
+    }
+
+    .dashboard .container .sidebar .quick-actions .quick-action .quick-action-title {
+        display: none;
+    }
+}
+
+@media (width < 40rem) {
+
+    .dashboard .container .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        margin-right: 0;
+        padding: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .main-content .navbar {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "brand"
+            "actions"
+            "online";
+        gap: .75rem;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+
+    .main-content .brand-navbar {
+        display: contents;
+    }
+
+    .logo-navbar {
+        grid-area: brand;
+        justify-self: start;
+        padding: .7rem;
+        border-radius: .75rem;
+        margin: 0;
+    }
+
+    .logo-navbar i {
+        font-size: 18px;
+    }
+
+    .title-navbar {
+        position: absolute;
+    top: 1.15rem;
+    right: 6rem;
+    text-align: right;
+    }
+
+    .title-navbar span {
+        display: block;
+        font-size: 1.15rem;
+        line-height: 1.2;
+    }
+
+    .title-navbar p {
+        margin: .15rem 0 0;
+        font-size: .65rem;
+        line-height: 1.2;
+    }
+
+    .navbar-actions {
+        grid-area: actions;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .5rem;
+        direction: rtl;
+    }
+
+    .navbar-actions .search {
+        order: 1;
+    }
+
+    .navbar-actions .notification {
+        order: 2;
+    }
+
+    .navbar-actions .owner {
+        order: 3;
+        margin-right: auto;
+    }
+
+    .search,
+    .notification {
+        width: 36px;
+        height: 36px;
+        flex-shrink: 0;
+        border-radius: .7rem;
+    }
+
+    .notification span {
+        top: -5px;
+        right: -5px;
+        width: 16px;
+        height: 16px;
+        font-size: .6rem;
+    }
+
+    .owner {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+        gap: 0;
+    }
+
+    .owner:hover {
+        box-shadow: none;
+    }
+
+    .owner-info {
+        display: none;
+    }
+
+    .image-owner {
+        width: 44px;
+        height: 44px;
+        padding: 3px;
+        box-sizing: border-box;
+        background-color: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: .75rem;
+    }
+
+    .online {
+        grid-area: online;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: center;
+        padding: .45rem;
+        border-radius: .6rem;
+        font-size: .7rem;
+    }
+
+    .financial-section {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "budget"
+            "middle"
+            "payment";
+    }
+
+    .middle-column {
+        grid-template-rows: auto;
+    }
+
+    .budget-item,
+    .account {
+        grid-template-columns: 42px 1fr;
+    }
+
+    .budget-money,
+    .account-money {
+        grid-column: 2;
+        align-items: flex-start;
+    }
+
+    .stats-section {
+        grid-template-columns: 1fr;
+        gap: .75rem;
+        margin-top: .75rem;
+    }
+
+    .stat-card {
+        min-height: 120px;
+        padding: 1rem 1.25rem;
+        border-radius: 1rem;
+    }
+
+    .stat-card .stat-title {
+        font-size: .8rem;
+    }
+
+    .stat-card .stat-amount .number {
+        font-size: 1.5rem;
+    }
+
+    .stat-badge {
+        font-size: .75rem;
+    }
+
+    .dashboard-bottom-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .right-column {
+        grid-template-rows: auto;
+    }
+
+    .transactions-card,
+    .activities-card,
+    .monthly-invoices-card {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .transactions-card {
+        overflow-x: auto;
+    }
+
+    .transactions-table {
+        min-width: 650px;
+    }
+
+    .card-header {
+        margin-bottom: 1rem;
+    }
+
+    .card-header h3,
+    .monthly-invoices-card .card-header h3 {
+        font-size: 1rem;
+    }
+
+    .card-header .view-all,
+    .monthly-invoices-card .view-all {
+        font-size: .75rem;
+    }
+
+    .activities-list {
+        gap: .75rem;
+    }
+
+    .activity-item {
+        padding: .8rem;
+    }
+
+    .activity-top {
+        gap: .5rem;
+    }
+
+    .right-activity-top {
+        gap: .25rem;
+    }
+
+    .activity-title {
+        font-size: .8rem;
+    }
+
+    .activity-desc {
+        font-size: .7rem;
+    }
+
+    .invoices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 10px;
+    }
+
+    .monthly-invoices-card {
+        padding: 1rem;
+    }
+
+    .monthly-invoices-card .card-header {
+        margin-bottom: 1.25rem;
+    }
+
+    .total-invoices {
+        margin-bottom: 20px;
+    }
+
+    .total-invoices h2 {
+        font-size: 1.75rem;
+    }
+
+    .invoice-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .invoice-name {
+        font-size: .75rem;
+    }
+
+    .invoice-item strong {
+        font-size: .8rem;
+    }
+
+    .invoice-item small {
+        font-size: .65rem;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .financial-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "budget payment"
+            "middle middle";
+        gap: 1.25rem;
+    }
+
+    .stats-section {
+        gap: 1.25rem;
+    }
+
+    .stat-card {
+        padding: 1.25rem;
+    }
+
+    .stat-card .stat-amount .number {
+        font-size: 2rem;
+    }
+
+    .dashboard-bottom-section {
+        gap: 1.25rem;
+    }
+
+    .transactions-card,
+    .activities-card,
+    .monthly-invoices-card {
+        padding: 1.25rem;
+    }
+
+    .transactions-table th,
+    .transactions-table td {
+        padding: .75rem .5rem;
+    }
+}
+
+@media (max-width: 1023px) {
+
+    .stats-section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: .75rem;
+    }
+
+    .stat-card {
+        padding: 1rem;
+    }
+
+    .stat-card .stat-amount .number {
+        font-size: 1.5rem;
+    }
+
+    .stat-card .stat-title {
+        font-size: .8rem;
+    }
+
+    .stat-badge {
+        font-size: .75rem;
+    }
+
+    .dashboard-bottom-section {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .right-column {
+        grid-template-rows: auto;
+    }
+
+    .transactions-card {
+        overflow-x: auto;
+    }
+
+    .transactions-table {
+        min-width: 700px;
+    }
+
+    .activities-list {
+        gap: .75rem;
+    }
+
+    .activity-item {
+        padding: .85rem;
+    }
+
+    .invoices-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .stats-section {
+        grid-template-columns: 1fr;
+        gap: .75rem;
+    }
+
+    .stat-card {
+        min-height: 120px;
+        padding: 1rem 1.25rem;
+    }
+
+    .stat-card .stat-amount .number {
+        font-size: 1.75rem;
+    }
+
+    .dashboard-bottom-section {
+        grid-template-columns: 1fr;
+    }
+
+    .card-header {
+        margin-bottom: 1rem;
+    }
+
+    .card-header h3,
+    .monthly-invoices-card .card-header h3 {
+        font-size: 1rem;
+    }
+
+    .card-header .view-all,
+    .monthly-invoices-card .view-all {
+        font-size: .75rem;
+    }
+
+    .activity-item {
+        padding: .8rem;
+    }
+
+    .activity-title {
+        font-size: .85rem;
+    }
+
+    .activity-desc {
+        font-size: .7rem;
+    }
+
+    .invoices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 15px;
+    }
+
+    .monthly-invoices-card {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 599px) {
+
+    .stats-section {
+        margin-top: .75rem;
+        gap: .75rem;
+    }
+
+    .stat-card {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .stat-card .stat-title {
+        font-size: .8rem;
+    }
+
+    .stat-card .stat-amount .number {
+        font-size: 1.5rem;
+    }
+
+    .stat-badge {
+        font-size: .75rem;
+    }
+
+    .transactions-card,
+    .activities-card,
+    .monthly-invoices-card {
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    .transactions-card {
+        overflow-x: auto;
+    }
+
+    .transactions-table {
+        min-width: 650px;
+    }
+
+    .activity-top {
+        gap: .5rem;
+    }
+
+    .right-activity-top {
+        gap: .25rem;
+    }
+
+    .activity-title {
+        font-size: .8rem;
+    }
+
+    .activity-desc {
+        font-size: .7rem;
+    }
+
+    .monthly-invoices-card .card-header {
+        margin-bottom: 1.25rem;
+    }
+
+    .total-invoices {
+        margin-bottom: 20px;
+    }
+
+    .total-invoices h2 {
+        font-size: 1.75rem;
+    }
+
+    .invoices-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 10px;
+    }
+
+    .invoice-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .invoice-name {
+        font-size: .75rem;
+    }
+
+    .invoice-item strong {
+        font-size: .8rem;
+    }
+
+    .invoice-item small {
+        font-size: .65rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .main-content .navbar {
+        padding: .8rem;
+    }
+
+    .logo-navbar {
+        padding: .6rem;
+    }
+
+    .logo-navbar i {
+        font-size: 16px;
+    }
+
+    .title-navbar span {
+        font-size: 1.1rem;
+    }
+
+    .title-navbar p {
+        font-size: .6rem;
+    }
+
+    .search,
+    .notification {
+        width: 34px;
+        height: 34px;
+    }
+
+    .image-owner {
+        width: 42px;
+        height: 42px;
+    }
+
+    .main-content .online {
+        padding: .4rem;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .financial-section {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "budget"
+            "middle"
+            "payment";
+    }
+
+    .middle-column {
+        grid-template-rows: auto;
+    }
+
+    .budget-item,
+    .account {
+        grid-template-columns: 42px 1fr;
+    }
+
+    .budget-money,
+    .account-money {
+        grid-column: 2;
+        align-items: flex-start;
+    }
+}
