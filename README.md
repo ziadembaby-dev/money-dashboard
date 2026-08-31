@@ -49,7 +49,7 @@ This project was built to:
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://ziadembaby-dev.github.io/-/)
+[View Live Demo](https://ziadembaby-dev.github.io/money-dashboard/)
 
 ## ⚠️ Project Type
 
