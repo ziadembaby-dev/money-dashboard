@@ -49,7 +49,7 @@ This project was built to:
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://ziadembaby-dev.github.io/-/)
+https://ziadembaby-dev.github.io/-/
 
 ## ⚠️ Project Type
 
